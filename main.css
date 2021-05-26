@@ -1,0 +1,120 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /*hace un rem = 10px */
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.Flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Centrado de elemento horizontal*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Centrado de elemento vertical */
+  height: 100vh;
+}
+
+.Carta {
+  background: white;
+  max-width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  /* la imagen y la cabezera se alinian */
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  /* pequeno sombreado */
+}
+
+.Carta-fotoazul {
+  width: 100%;
+  display: block;
+}
+
+.Carta-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  centro de imagen */
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.Carta-body-victor {
+  border: 5px solid white;
+  background-color: white;
+  /* quita un poco que quedo de la imagen celeste */
+  border-radius: 50%;
+  margin-top: calc(-48px - 5px);
+  /*calcula el margin top y el border para que la imagen se centre con la cabezera de la Carta */
+}
+
+.Carta-body-Titulo {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.Carta-body-Titulo span {
+  color: var(--dark-gray);
+  font-weight: 400;
+  /* usa los 400 de google fonts */
+  margin-left: 0.7rem;
+}
+
+.Carta-body-texto {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.Carta-footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Carta-footer-social-mas {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Carta-footer-social-mas p {
+  color: var(--dark-gray);
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=main.css.map */
